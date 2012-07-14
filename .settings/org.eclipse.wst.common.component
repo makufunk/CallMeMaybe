@@ -3,6 +3,9 @@
     <wb-module deploy-name="CallMeMaybe">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="visural-common-0.5.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CallMeMaybe/lib/visural-common-0.5.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="CallMeMaybe"/>
         <property name="java-output-path" value="/CallMeMaybe/build/classes"/>
     </wb-module>
