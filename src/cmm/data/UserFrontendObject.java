@@ -1,11 +1,14 @@
 package cmm.data;
 
+import java.util.List;
+
 public class UserFrontendObject {
 	private String firstName;
 	private String lastName;
 	private int matchLevel;
 	private String linkToPic;
-	private String[] commomLikes;
+	private List<String> commomLikes;
+	private boolean isMHB;
 	
 	public String getFirstName() {
 		return firstName;
@@ -31,11 +34,17 @@ public class UserFrontendObject {
 	public void setLinkToPic(String linkToPic) {
 		this.linkToPic = linkToPic;
 	}
-	public String[] getCommomLikes() {
+	public List<String> getCommomLikes() {
 		return commomLikes;
 	}
-	public void setCommomLikes(String[] commomLikes) {
+	public void setCommomLikes(List<String> commomLikes) {
 		this.commomLikes = commomLikes;
+	}
+	public boolean getIsMHB(){
+		return this.isMHB;
+	}
+	public void setIsMHB(boolean isMarriedHasBaby){
+		this.isMHB = isMarriedHasBaby;
 	}
 	
 	

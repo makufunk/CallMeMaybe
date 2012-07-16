@@ -1,7 +1,7 @@
 package cmm.data;
 
 public class ProfileCard {
-	int id;
+	long id;
 	String name;
 	String firstName;
 	String lastName;
@@ -10,10 +10,10 @@ public class ProfileCard {
 	String gender;
 	String locale;
 	
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	public String getName() {

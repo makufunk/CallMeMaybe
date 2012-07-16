@@ -1,0 +1,150 @@
+*{
+font-family: Verdana;
+font-size: 14px;
+color: #C21BE0;/* #424A7E; /*#FFE4B5;	*/
+}
+
+body
+{
+	background: url("images/background.jpeg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    margin:0;
+    padding:0
+}
+
+.outer {
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+}
+
+
+h1 {
+
+    font-size: 120px;
+    color: #C21BE0;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    padding:0;
+    margin:0;
+    margin-bottom: 40px;
+}
+
+.leftside {
+    float:left;
+    width: 300px;
+    height: 300px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.login {
+    float: right;		
+    border: 5px dashed;
+    width: 450px;
+    height: 300px;
+    margin-top: 0px;
+    margin-right: 30px;
+}
+
+#loginfield {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+p {
+    margin: 20px
+}
+
+#textInside {
+    margin-left: 30px;
+    font-family: Lobster;
+    font-size: 20px;
+}
+
+
+.field {
+    position: relative;
+    left:0%;
+    width:100px;
+    margin:10px;
+}
+
+
+.formTxt {
+    color: #C21BE0;
+    font-variant:small-caps;
+    font-family:Lobster;
+    font-size: 25px;
+    text-align:left;
+    align:left;
+}
+
+.txtBox {
+    position:static;
+    left:5%;
+    height: 30px;
+    width: 220px;
+    margin-top:10px;
+    background:#A509AB;
+    border-radius: 10px;
+    border-style:solid;
+    border-width:3px;
+    border-color:#A509AB;
+    margin: 0px;
+    color: #eee685;
+}
+
+.txtBox:focus {
+    -webkit-box-shadow:0 0 30px #555;
+    -moz-box-shadow:0 0 30px #555;
+    box-shadow:0 0 30px #555;
+}
+
+.genderCheck {
+    float: left;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    width: 150px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+.submission {
+    float: right;
+    margin-right: 70px;
+    margin-top: 10px;
+    width: 150px;
+}
+
+
+a { 
+	color: #eee685; 
+    font-size: 16px;
+	text-decoration: none;
+}
+
+.submitButton {
+    background:#A509AB;
+    color: #eee685; 
+    position: relative;
+    width:145px;
+    height:50px;
+    border-style: none; 
+    border-radius: 20px;
+
+}
+
+.submitButton:hover {
+    -webkit-box-shadow:0 0 20px #555;
+    -moz-box-shadow:0 0 20px #555;
+    box-shadow:0 0 20px #555;
+}
+
+#login {
+    left:8%;
+}
+

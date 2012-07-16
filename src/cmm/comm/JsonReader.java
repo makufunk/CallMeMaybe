@@ -23,6 +23,7 @@ public class JsonReader {
   }
 
   public static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
+	  System.out.println("URL ="+url.toString());
     InputStream is = new URL(url).openStream();
     try {
       BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));

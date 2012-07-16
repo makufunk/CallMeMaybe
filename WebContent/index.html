@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head><title>Sample HTML Page</title></head>
-<body>
-<h1>Sample HTML Page</h1>
-<p>
-This is a simple HTML page. When first learning, make a new Dynamic Web app in Eclipse,
-copy this file to the WebContent folder, deploy the app, start the server, and access 
-the page with http://localhost/<i>appName</i>/hello.html.
-</p>
-</body></html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Call Me Maybe</title>
+        <style type="text/css" media="all"> @import "index.css";</style>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <div class="outer"> 
+            <h1> Call Me Maybe </h1>
+            
+            
+            <div class="leftside">
+                <img src="images/phone.png" alt="Phone" />
+            </div>
+            
+            <div class="login">
+                <form id="loginfield" action="test" method="post">
+                    <p>
+                        <span class="field">
+                            <span class="formTxt"> Username: </span>
+                            <input id="userName" name="userName" class="txtBox" type="input">
+                        </span>
+                    </p>
+                    <p>
+                        <span class="field">
+                            <span class="formTxt"> Password: </span>
+                            <input id="userPassword" name="userPassword" class="txtBox" type="password">
+                        </span>
+                    </p>
+                    <p id="textInside"> Looking for . . .  </p>
+                    <div class="genderCheck">
+                        <input id="" type="radio" name="gender" value="Male" /> Male<br />
+                        <input type="radio" name="gender" value="Female" /> Female<br />
+                        <input type="radio" name="gender" value="Both" /> Both 
+                    </div>    
+                    <div class="submission">
+                        <a href="main.html"><input class="submitButton" id="newuser" type="submit" value="Hello?"> </a>
+                    </div>
+                </form>
+            </div>  
+               
+        </div>
+    </body>
+</html>
