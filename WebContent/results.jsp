@@ -24,8 +24,8 @@ $(function() {
 #wait{
 		font-size: large;
 		line-height: 200px;
-		margin-top: 50px;
-		margin-bottom: 50px;
+		margin-top: 45px;
+		margin-bottom: 45px;
 		width: 500px;
 		height: 200px;
 		margin-left: auto;
@@ -56,27 +56,27 @@ Please wait while performing test</div>
 
 <%
 //code by marcus!!!!
+//pulling of data
 List<UserFrontendObject> resultList=(List<UserFrontendObject>)request.getAttribute("resultList");
-//dev code for mockup data
+
 
 %>
 
-<script>
-var waitDiv= document.getElementById("wait");
-waitDiv.style.display="none";
 
-</script>
 <center><img src="images/phone.png" alt="phone"/></center>
 
 <img src="Legend.png" style="float:right;">
 
 <div id="resContainer" style="width: 60%; margin-left: auto; margin-right: auto; margin-top: 50px;" >
 	<div id="accordion">
-		<%for(int i=0; i<resultList.size();i++){ %>
-		<%UserFrontendObject res= resultList.get(i); %>
+		<% //code by Dobri
+		//JQuery accordion
+		for(int i=0; i<resultList.size();i++){ 
+		UserFrontendObject res= resultList.get(i); %>
 		<h3><a href="#"><%=res.getFirstName() %> <%= res.getLastName() %>
 		
-		<%if((res.getMatchLevel()>70) && res.getIsMHB()==false){%>
+		<% //image display logic
+		if((res.getMatchLevel()>70) && res.getIsMHB()==false){%>
             <img alt="redDot" src="dotGreen.png">
         <%}%> 
         <%if(res.getMatchLevel()<=70&&res.getMatchLevel()>40&&res.getIsMHB()==false){%>
