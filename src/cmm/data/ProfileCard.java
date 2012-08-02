@@ -1,15 +1,17 @@
 package cmm.data;
-
+//the profile card for the current session
 public class ProfileCard {
 	long id;
+	//username in our service
 	String name;
 	String firstName;
 	String lastName;
+	//link to profile pic
 	String link;
+	//username in fcbk
 	String userName;
 	String gender;
-	String locale;
-	
+	String locale;	
 	public long getId() {
 		return id;
 	}

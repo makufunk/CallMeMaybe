@@ -1,7 +1,7 @@
 package cmm.core;
 
 import com.visural.common.StringUtil;
-
+//main facebook connection object
 public class Facebook {
     // get these from your FB Dev App
     private static final String api_key = "253437074766683";

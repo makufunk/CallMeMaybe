@@ -75,6 +75,7 @@ public class MainServlet extends HttpServlet {
 	    
 	    if (!isMultipart) {
 	    	name = request.getParameter("userName");
+			//sanity check for username
 			System.out.println(name + "SLAYERUSERNAME");
 			pw = request.getParameter("userPassword");
 			gender = request.getParameter("gender");

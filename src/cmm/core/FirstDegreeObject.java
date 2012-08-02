@@ -1,5 +1,5 @@
 package cmm.core;
-
+//object which performs the first step of the scraping
 public class FirstDegreeObject {
 
 	private long uid;
